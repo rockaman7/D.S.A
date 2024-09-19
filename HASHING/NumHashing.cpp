@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
-// given array of n integers , given Q queries and in each query given a number X
-//print count of that number in that array 
+// given array of 'n' integers , given 'q' queries and in each query , given a 'number' to be checked 
+//print count of that 'number' in that array 
 int main (){
     int n ;
     cout<< "Array size : ";
@@ -14,7 +14,7 @@ int main (){
      
     int h[13]={0};                  //this is the hash array ,, we have taken its size as 13 as max element in array is 12(let)
     for ( int i = 0 ; i<n ; i++  ){
-        h[arr[i]]+=1;               // this is used later i h[numkber] to check frequency by traversing in array .
+        h[arr[i]]+=1;               // this is used later i h[number] to check frequency by traversing in array .
     }
 
     int q ;
