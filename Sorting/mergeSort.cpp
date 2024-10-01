@@ -3,7 +3,7 @@
 #include <bits\stdc++.h>
 using namespace std;
 
-void merge_sort(int arr[],int n ){
+void merge_sort(int arr[],int mid ){
 
 }
 
@@ -21,5 +21,5 @@ int main (){
         cout <<arr[i]<< " ";
     }
     cout<< "\n";
-    merge_sort(arr,n); 
+    merge_sort(arr,mid); 
 }
