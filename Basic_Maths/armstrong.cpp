@@ -7,10 +7,10 @@ bool CheckArmstrong(long long x){
     int  k = to_string(x).length();
     while(temp>0){
         int end = temp%10;
-        sum=sum + pow(end,k);
+        sum=sum +(long long)round(pow(end,k)); //// Use round() to avoid precision errors
         temp=temp/10;
     }
-    return sum==x;//? true : false;
+    return sum==x;
 }
 int main (){
     long long x;
